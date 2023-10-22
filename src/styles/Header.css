@@ -1,0 +1,140 @@
+
+/* 
+ADJUST HEIGHT SO THAT IT IS SMALLER
+
+ADJUST THE HEIGHT OF GREY SO IT DOESNT CHANGE WHEN THE SCREEN IS SMALLER
+*/
+
+/* Top bar */
+#profilePhoto {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+#profilePhotoCaption, #profilePhotoCaptionSmall {
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    left: 220px;
+    top: 10%;
+    font-size: 45px;
+    color: #0c9570;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainNavigation {
+    background-color: rgb(70, 70, 70);
+    padding: 1%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#websiteTitle {
+    display: inline-block;
+}
+
+.bars {
+    color: #0c9570;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    float: right;
+    margin-top: 85px;
+
+}
+
+.bars:hover {
+    color: whitesmoke;
+}
+
+.navigationBar a{
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    display: block;
+    line-height: 2.2;
+    padding: 0.5rem 1rem;
+    font-size: 26px;
+    font-weight: 600;
+    transition: al-l 0.5s ease;
+}
+
+.navigationBar a:hover {
+    background-color: #aaaaaa;
+    color: #044b38;
+    padding: 0.5rem;
+}
+
+.navigationBar {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+/* adjust height for dropdown menu */
+.showNavigationBar {
+    height: 22.8rem;
+} 
+
+.titleBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 1350px) {
+    .mainNavigation {
+        max-width: 3000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .titleBar {
+        padding: 0;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .navigationBar {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigationBar a{
+        padding: 0;
+        margin: 0.5rem;
+    }
+
+    .navigationBar a:hover {
+        padding: 0.1rem;
+    }
+    
+    
+}
+
+@media (min-width: 650px) {
+    
+    #profilePhotoCaptionSmall {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    #profilePhotoCaption {
+        display: none;
+    }
+}

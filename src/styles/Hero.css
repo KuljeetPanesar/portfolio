@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ysabeau+SC:wght@500&display=swap');
+
+.heroContainer {
+    position: relative;
+    margin-bottom: -9px;
+}
+
+.codingHero {
+    filter: opacity(20%);
+    width: 100%;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+.heroText h1 {
+    font-size: 50px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.heroText p {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
